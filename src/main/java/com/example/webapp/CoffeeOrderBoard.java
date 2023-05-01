@@ -7,7 +7,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-
 public class CoffeeOrderBoard {
 
     private final List<Order> orderList = new ArrayList<>();
@@ -19,6 +18,7 @@ public class CoffeeOrderBoard {
             log.error("You entered an invalid numId"+order.getNumberOrder());
             throw new IllegalArgumentException("Wrong ! You entered an invalid numId.");
         }
+
         try {
             orderList.add(order);
             log.info("order added" + order);
